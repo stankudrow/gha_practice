@@ -8,7 +8,7 @@ on:
 
 jobs:
   job1:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, World!"
 
@@ -18,4 +18,4 @@ jobs:
       - name: Show the repo tree
         run: |
           echo "Treeing the ${{ github.repository }}"
-          tree
+          ls -lah
