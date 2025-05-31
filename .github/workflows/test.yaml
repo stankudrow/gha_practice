@@ -18,4 +18,4 @@ jobs:
       - name: Show the repo tree
         run: |
           echo "Treeing the ${{ github.repository }}"
-          ls -lah
+          ls -lah  # tree was not found
