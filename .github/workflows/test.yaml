@@ -1,0 +1,21 @@
+name: MyWorkflow
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  job1:
+    runs_on: ubuntu-latest
+    steps:
+      - run: echo "Hello, World!"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show the repo tree
+        run: |
+          echo "Treeing the ${{ github.repository }}"
+          tree
